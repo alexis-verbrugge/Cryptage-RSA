@@ -1,0 +1,26 @@
+Informations générales:
+
+-----------------------------------------------------------------------------------------------------------------
+
+compilation:
+
+make crypt --> cryptage
+make decrypt --> decryptage
+
+-----------------------------------------------------------------------------------------------------------------
+
+executer 
+
+./crypt <partie haute de p> <partie basse de p> <partie haute de q>  <partie basse de q> <fichier txt contenant le mot à crypter>
+
+
+./decrypt <partie haute de p> <partie basse de p> <partie haute de q>  <partie basse de q> <fichier dat contenant les blocs à décrypter>
+
+-----------------------------------------------------------------------------------------------------------------
+
+elong : structure de 128 bits 
+une partie haute elong.h --> long long (64 bits)
+une partie basse elong.l --> long long (64 bits)
+
+arithmetque.c  contient toutes les fonctions élémentaires que l'on peut faire sur des elongs 
+adddition, soustraction, multiplication, modulo, equals, comparaison, decalage à droite et à gauche, exponentiation rapide
